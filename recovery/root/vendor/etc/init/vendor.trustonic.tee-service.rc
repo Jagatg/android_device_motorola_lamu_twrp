@@ -1,0 +1,12 @@
+service tee-service /vendor/bin/hw/vendor.trustonic.tee-service
+    interface aidl aidl/vendor.trustonic.teeservice.ITeeService
+    interface aidl aidl/vendor.trustonic.tee.ITee/default
+    interface aidl aidl/vendor.trustonic.tui.ITui/default
+    class hal
+    user system
+    group system
+
+# We use the property set by Trustonic daemon so mcOpenSession is available
+# and DrAndroid is loaded
+on property:ro.vendor.trustonic.ready=true
+    start tee-service
