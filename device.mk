@@ -10,6 +10,9 @@ DEVICE_PATH := device/motorola/lamu
 # Generic ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
@@ -53,16 +56,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
 
-# Health HAL
-PRODUCT_PACKAGES += \
-    android.hardware.health-service.mediatek-recovery
-
 # Partition helper
 PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
 
-# Fastbootd
+# fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
 
@@ -73,3 +72,11 @@ PRODUCT_SOONG_NAMESPACES += \
 # API / VNDK
 PRODUCT_SHIPPING_API_LEVEL := 35
 PRODUCT_TARGET_VNDK_VERSION := 35
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.mediatek \
+    android.hardware.health-service.mediatek-recovery
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6768
