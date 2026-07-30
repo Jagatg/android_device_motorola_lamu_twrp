@@ -90,8 +90,5 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
-# API
-# PRODUCT_SHIPPING_API_LEVEL := 35
-
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
