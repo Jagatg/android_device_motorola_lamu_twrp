@@ -202,3 +202,17 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 
+TW_LOAD_VENDOR_MODULES := "\
+mediatek-drm.ko \
+mtk_panel_ext.ko \
+mtk_disp_notify.ko \
+dsi_panel_boe_icnl9922c_672_1080x2400_vdo_60hz.ko \
+dsi_panel_tm_td4376_672_1080x2400_vdo_60hz.ko \
+dsi_panel_djn_nt36672s_672_1080x2400_vdo_60hz.ko \
+dsi_panel_txd_ili9883c_667_720x1604_vdo_90hz.ko \
+dsi_panel_tm_nt36528a_667_720x1604_vdo_90hz.ko \
+dsi_panel_djn_td4160_667_720x1604_vdo_90hz.ko \
+chipone_tddi.ko \
+nt36xxx_tp.ko \
+omnivision_tcm.ko \
+tp_ilitek.ko"
