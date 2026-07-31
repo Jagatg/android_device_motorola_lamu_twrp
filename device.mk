@@ -92,3 +92,8 @@ PRODUCT_PACKAGES += \
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6768
+
+# Vendor ramdisk
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/recovery/root/first_stage_ramdisk/fstab.mt6768:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.mt6768
+
