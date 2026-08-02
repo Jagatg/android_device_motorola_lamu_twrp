@@ -59,9 +59,9 @@
 /seccfg             emmc         /dev/block/by-name/seccfg
 
 # Internal Storage
-#/storage            f2fs         /data/media/0                           flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
+/storage            f2fs         /data/media/0                           flags=display="Internal Storage";backup=1;usermrf;fsflags="bind";removable
 
-# External Storage
-/devices/platform/11240000.mmc*  auto  auto  defaults  voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/mt_usb*         auto  vfat  defaults  voldmanaged=usbotg:auto
+# External storage
+/external_sd		vfat		/dev/block/mmcblk1p1		/dev/block/mmcblk1		flags=display="MicroSD Card";storage;wipeingui;removable;fsflags="utf8"
+/usb-otg		vfat		/dev/block/sda1			/dev/block/sda			flags=display="USB-OTG";storage;wipeingui;removable;fsflags="utf8"
 
