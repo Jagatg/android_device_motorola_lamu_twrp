@@ -196,3 +196,14 @@ TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_LOAD_VENDOR_MODULES := "*"
+
+# Brightness
+TW_MAX_BRIGHTNESS := 255
+TW_DEFAULT_BRIGHTNESS := 160
+
+# Battery
+TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
+
+# Display Ofset
+TW_Y_OFFSET := 70
+TW_H_OFFSET := -70
