@@ -204,8 +204,8 @@ TW_INCLUDE_LPDUMP := true
 
 # GKI
 TW_LOAD_VENDOR_BOOT_MODULES := true
-TW_LOAD_VENDOR_MODULES := "*"
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
+TW_LOAD_VENDOR_MODULES := "ccci_md_all.ko connadp.ko mtk_gpu_hal.ko mtk_gpufreq_mt6768.ko mtk_gpufreq_wrapper_legacy.ko mtk_ppm_v3.ko thermal_monitor.ko"
 
 # Filesystems
 TW_INCLUDE_FUSE_EXFAT := true
@@ -237,3 +237,6 @@ TW_H_OFFSET := -70
 # Misc
 TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_SKIP_ADDITIONAL_FSTAB := true
+
+# CPU temp
+TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone8/temp"

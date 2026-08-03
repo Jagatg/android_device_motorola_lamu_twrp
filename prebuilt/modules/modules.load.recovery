@@ -74,6 +74,7 @@ mtk_battery_oc_throttling.ko
 mtk_low_battery_throttling.ko
 pmic_lbat_service.ko
 pmic_lvsys_notify.ko
+mtk_cpuhp.ko
 mtk_dynamic_loading_throttling.ko
 mtk_pbm.ko
 mtk_mdpm_v1.ko
