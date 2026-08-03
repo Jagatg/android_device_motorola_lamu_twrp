@@ -225,3 +225,6 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
 # Display Ofset
 TW_Y_OFFSET := 70
 TW_H_OFFSET := -70
+
+# Misc
+TW_BATTERY_SYSFS_WAIT_SECONDS := 6
