@@ -239,4 +239,4 @@ TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_SKIP_ADDITIONAL_FSTAB := true
 
 # CPU temp
-TW_CUSTOM_CPU_TEMP_PATH := "/sys/class/thermal/thermal_zone8/temp"
+TW_CUSTOM_CPU_TEMP_PATH := "/dev/thermal_shim"
