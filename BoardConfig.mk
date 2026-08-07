@@ -1,7 +1,4 @@
-#
-# SPDX-FileCopyrightText: The LineageOS Project
-# SPDX-License-Identifier: Apache-2.0
-#
+
 DEVICE_PATH := device/motorola/lamu
 
 # For building with minimal manifest
@@ -189,7 +186,6 @@ TARGET_USES_MKE2FS := true
 # Recovery
 TW_HAS_NO_RECOVERY_PARTITION := true
 TW_NO_FLASH_CURRENT_TWRP := true
-TW_ALWAYS_RMRF := true
 
 # ADB & MTP
 TW_HAS_MTP := true
@@ -235,7 +231,6 @@ TW_Y_OFFSET := 70
 TW_H_OFFSET := -70
 
 # Misc
-TW_BATTERY_SYSFS_WAIT_SECONDS := 6
 TW_SKIP_ADDITIONAL_FSTAB := true
 
 # CPU temp
