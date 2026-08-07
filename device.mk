@@ -55,13 +55,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
-# Boot Control
+# Boot
 PRODUCT_PACKAGES += \
-    bootctrl.mt6768 \
-    bootctrl.mt6768.recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctrl
+    android.hardware.boot-service.mediatek \
+    android.hardware.boot-service.mediatek_recovery
 
 # Partition helper
 PRODUCT_PACKAGES += \
