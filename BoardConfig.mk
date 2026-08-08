@@ -223,15 +223,13 @@ TW_EXCLUDE_APEX := true
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 160
 
-# Battery
-TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/battery/capacity
-
 # Display Ofset
 TW_Y_OFFSET := 70
 TW_H_OFFSET := -70
 
 # Misc
 TW_SKIP_ADDITIONAL_FSTAB := true
+TW_NO_BATT_PERCENT := true
 
 # CPU temp
 TW_CUSTOM_CPU_TEMP_PATH := "/dev/thermal_shim"
