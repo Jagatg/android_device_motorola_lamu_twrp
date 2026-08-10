@@ -149,7 +149,6 @@ int ufs_set_boot_part(int32_t in_slot) {
         LOG(ERROR) << "Error requesting ufs attr idn " << QUERY_ATTR_IDN_BOOT_LU_EN
                    << " via query ioctl (return value: " << ret << ", error no: " << errno << ")";
 
-out:
     close(fd);
     return ret;
 }
